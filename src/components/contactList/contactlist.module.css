@@ -1,0 +1,15 @@
+.contact__list {
+    list-style: none;
+}
+
+.contact__style {
+    
+}
+
+ul > li:before {
+    content: "✔";
+    position: absolute;
+    left: 26px;
+    margin-top: 22px;
+    color: green;
+}

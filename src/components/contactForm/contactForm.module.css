@@ -1,0 +1,23 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+}
+
+.label {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.input__field {
+    margin-bottom: 20px;
+    padding: 10px 10px;
+}
+
+.button__contact {
+    padding: 10px 10px;
+    font-weight: 600;
+    box-shadow: lightgray;
+    background-color: lightskyblue;
+    border-radius: 10px;
+}
