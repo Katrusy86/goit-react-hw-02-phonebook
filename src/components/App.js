@@ -32,7 +32,6 @@ class App extends Component {
 
 // ==================================================
 
-
     addContact = (contact) => {
         const contactToAdd = {
             ...contact,
@@ -44,7 +43,7 @@ class App extends Component {
         if(!findContact) {        
         this.setState(prevState => ({
             contacts:[...prevState.contacts, contactToAdd]
-        }))} else alert('Already ')
+        }))} else alert('The contact name already exists!')
     };
 
 
