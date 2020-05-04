@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-
 import styles from './contactForm.module.css'
+
+
 
 class ContactForm extends Component{
     state = {
         name:'',
         number:''  
     };
+
 
     handleChange = e =>{
         const {name,value}=e.target;
@@ -25,7 +27,9 @@ class ContactForm extends Component{
             name:'',
             number:''
         })
-    }
+    };
+    
+    
 
     render() {
            const {name, number}=this.state
@@ -38,7 +42,7 @@ class ContactForm extends Component{
                     </label>
                     <label className={styles.label}> 
                         Number
-                        <input className={styles.input__field} type="tel" value = {number} name="number" onChange={this.handleChange} placeholder="Enter your phone"/>
+                        <input className={styles.input__field} type="tel" value = {number} name="number"  onChange={this.handleChange} placeholder="Enter your phone"/>
                     </label> 
                     <button className={styles.button__contact} type="submit">Add contact</button>
                     </form>
@@ -48,8 +52,8 @@ class ContactForm extends Component{
 }
 
 ContactForm.propTypes = {
-    name:PropTypes.string.isRequired,
-    number:PropTypes.number.isRequired
+    name:PropTypes.string,
+    number:PropTypes.number
 }
 
 

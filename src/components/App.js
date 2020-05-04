@@ -38,16 +38,15 @@ class App extends Component {
             ...contact,
             id: uuid()
         }
-        
+        const {name} = contact
+        const findContact = this.state.contacts.find(((contact) => contact.name === name))
+        // console.log(newContact)
+        if(!findContact) {        
         this.setState(prevState => ({
             contacts:[...prevState.contacts, contactToAdd]
-        })
-        )}
-        // updateContact = ({name}) =>{
-        //     this.setState(state=>({
-        //         contacts:state.contacts.map(contact =>contact.name === name ? alert('fff'):contact)
-        //     }))
-        // }
+        }))} else alert('Already ')
+    };
+
 
     deleteContact = id => {
         this.setState(prevState =>({
