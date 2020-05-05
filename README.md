@@ -1,1 +1,1 @@
-[Просмотр приложения](https://katrusy86.github.io//goit-react-hw-02-phonebook/)
+[Просмотр приложения](https://katrusy86.github.io/goit-react-hw-02-phonebook/)
